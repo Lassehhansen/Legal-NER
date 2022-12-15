@@ -1,7 +1,6 @@
 
-*See [assignment_description.md](assignment_description.md) for a description of the assignment*
+## The Tag, the Whole Tag, and Nothing but the Tag”: Fine-tuning and utilizing a pre-trained BERT model for (Fine-Grained) Name Entity Recognition in Danish legal documents
 
-# Summary
 
 *Include a short description of which models you have tried and conclusions from comparing these models. This should be no longer than an abstract. This section can also include questions regarding the assignment.* 
 
