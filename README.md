@@ -26,15 +26,3 @@ The organization of the project is as follows:
 ├── requirement.txt            <- A requirements file of the required packages.
 └── assignment_description.md  <- the assignment description
 ```
-
-
-
-## Running the code
-You can run the reproduce all the experiments by cloning the GitHub repository and running the following:
-
-*Update the code below to demonstrate how your code should be run to produce the results in the result section. E.g.:*
-
-```
-pip install -r requirements.txt
-python ner/main.py --epochs 10 --gensim_embedding glove-wiki-gigaword-50
-```
