@@ -10,21 +10,18 @@
 ## Project Organization
 The organization of the project is as follows:
 
-*Correct this to reflect any changes you make*
-
 ```
 ├── LICENSE                    <- the license of this code
 ├── README.md                  <- The top-level README for this project.
 ├── .github            
 │   └── workflows              <- workflows to automatically run when code is pushed
-│   │    └── pytest.yml        <- A workflow which runs pytests upon push
-├── classification             <- The main folder for scripts
-│   ├── tests                  <- The pytest test suite
+│   │    └── run.sh        
+├── NER                        <- The main folder for scripts
+│   ├── tests                  
 │   │   └── ...
 |   └── ...
 ├── .gitignore                 <- A list of files not uploaded to git
-├── requirement.txt            <- A requirements file of the required packages.
-└── assignment_description.md  <- the assignment description
+└── requirement.txt            <- A requirements file of the required packages.
 ```
 
 ## LegalDoc Class
