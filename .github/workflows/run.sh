@@ -3,7 +3,6 @@
 
 #!/usr/bin/env bash
 
-
 #Installing required packages 
 
 python3 -m pip install --upgrade pip #Using python3 using module pipm upgrade pip
