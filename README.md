@@ -26,3 +26,26 @@ The organization of the project is as follows:
 ├── requirement.txt            <- A requirements file of the required packages.
 └── assignment_description.md  <- the assignment description
 ```
+
+## LegalDoc Class
+
+This is a class called LegalDoc that contains several methods for processing legal documents. The xml_loader method reads xml files from a specified path, extracts certain data from them, and stores the data in dataframes. The preperation_for_labelling method takes a dataframe and a column name as input, tokenizes the sentences in the specified column, and returns a new dataframe with the sentence-tokenized texts.
+
+Here is a brief overview of the methods and their inputs and outputs:
+
+ -xml_loader:
+
+Input: a path to a folder containing xml files, a language string, and optional boolean values for adding padding and unknown tokens.
+Output: a dataframe containing the extracted data.
+
+- preperation_for_labelling:
+
+Input: a dataframe and a column name.
+Output: a new dataframe with the sentence-tokenized texts.
+
+
+
+
+
+
+
