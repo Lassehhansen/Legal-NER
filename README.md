@@ -33,7 +33,7 @@ This is a class called LegalDoc that contains several methods for processing leg
 
 Here is a brief overview of the methods and their inputs and outputs:
 
- -xml_loader:
+- xml_loader:
 
 Input: a path to a folder containing xml files, a language string, and optional boolean values for adding padding and unknown tokens.
 Output: a dataframe containing the extracted data.
@@ -42,6 +42,22 @@ Output: a dataframe containing the extracted data.
 
 Input: a dataframe and a column name.
 Output: a new dataframe with the sentence-tokenized texts.
+
+## parse_args()
+The parse_args() function is used to parse command-line arguments passed to the script when it is executed. It does this using the argparse module, which is a standard Python library for parsing command-line arguments.
+
+The function creates an argument parser object using the argparse.ArgumentParser() constructor, and specifies a description for the script. The add_argument() method is then used to add arguments to the parser. In this case, the script has three arguments:
+
+path, a required string argument specifying the path to the folder containing the xml files.
+language, a required string argument specifying the language of the documents.
+padding, an optional boolean argument that adds padding to the data if specified.
+unknown, an optional boolean argument that adds unknown tokens to the data if specified.
+The parse_args() function returns the parsed arguments using the parse_args() method of the argument parser object.
+
+## create_processor(args)
+The create_processor() function is used to create an instance of the LegalDoc class. It takes a single argument, args, which is a namespace object containing the parsed command-line arguments.
+
+The function creates an instance of the LegalDoc class using the LegalDoc() constructor, and passes in the values of the path, language, padding, and unknown arguments as keyword arguments. The function then returns the created instance of the LegalDoc class.
 
 
 
