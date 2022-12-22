@@ -1,3 +1,9 @@
+# adding a shebang '
+# It is used to specify the interpreter that should be used to execute the script
+
+#!/usr/bin/env bash
+
+
 #Installing required packages 
 
 python3 -m pip install --upgrade pip #Using python3 using module pipm upgrade pip
