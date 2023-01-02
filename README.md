@@ -12,7 +12,7 @@
 
 </div>
 
-<img src="/ner/figure/xlmRobertLarge_results.png" width=20% height=20%>
+<img src="/ner/figure/xlmRobertLarge_results.png" width=60% height=60%>
 
   
 # Performance per epoch
