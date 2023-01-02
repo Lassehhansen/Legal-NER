@@ -5,7 +5,8 @@
 *Include a short description of which models you have tried and conclusions from comparing these models. This should be no longer than an abstract. This section can also include questions regarding the assignment.* 
 
 # Performance
-*This should include a table of performance metrics of different models. The performance metrics should at least include accuracy and F1-score.*
+![xlm-Roberta-Large-Fine-tune](Legal-NER/ner/figure/xlmRobertLarge_results.png)
+
 
 ## Project Organization
 The organization of the project is as follows:
