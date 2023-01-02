@@ -5,8 +5,13 @@
 *Include a short description of which models you have tried and conclusions from comparing these models. This should be no longer than an abstract. This section can also include questions regarding the assignment.* 
 
 # Performance
+
+<div style="width: 60%; height: 60%">
+  
 ![xlm-Roberta-Large-Fine-tune](/ner/figure/xlmRobertLarge_results.png)
 
+</div>
+  
 # Performance per epoch
 
 ```
