@@ -6,12 +6,6 @@
 
 # Performance
 
-<div style="width: 60%; height: 60%">
-  
-![xlm-Roberta-Large-Fine-tune](/ner/figure/xlmRobertLarge_results.png)
-
-</div>
-
 <img src="/ner/figure/xlmRobertLarge_results.png" width=60% height=60%>
 
   
