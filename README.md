@@ -6,10 +6,14 @@
 
 # Performance
 
+## xlm-roBERTa-large fine-tuned for NER legal text 
+
 <img src="/ner/figure/xlmRobertLarge_results.png" width=60% height=60%>
 
   
 # Performance per epoch
+
+## xlm-roBERTa-large fine-tuned for NER legal text 
 
 ```
 Epoch Steps   LOSS TRANS...  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE
