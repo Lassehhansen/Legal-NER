@@ -11,6 +11,9 @@
 ![xlm-Roberta-Large-Fine-tune](/ner/figure/xlmRobertLarge_results.png)
 
 </div>
+
+<img src="/ner/figure/xlmRobertLarge_results.png" width=20% height=20%>
+
   
 # Performance per epoch
 
