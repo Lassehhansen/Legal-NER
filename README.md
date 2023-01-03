@@ -62,14 +62,14 @@ The organization of the project is as follows:
 ├── .github            
 │   └── workflows              <- workflows to automatically run when code is pushed
 │   │    └── run.sh        
-├── NER                        <- The main folder for scripts
+└── NER                        <- The main folder for scripts
     ├── document_similarity    <- Functionf for Document Similarity implementation
     ├── figure                 <- Folder containing figures    
     ├── training   
     │   └── config.cdf         <- The config file used for training
-    └── main.py                <- Main file for running XML preprocessing of legal documents
-    └── preprocessing.py
-    └── xml_class.py
+    ├── main.py                <- Main file for running XML preprocessing of legal documents
+    ├── preprocessing.py
+    ├── xml_class.py
     └── __init__.py
     
 ```
