@@ -63,11 +63,15 @@ The organization of the project is as follows:
 │   └── workflows              <- workflows to automatically run when code is pushed
 │   │    └── run.sh        
 ├── NER                        <- The main folder for scripts
-│   ├── tests                  
-│   │   └── ...
-|   └── ...
-├── .gitignore                 <- A list of files not uploaded to git
-└── requirement.txt            <- A requirements file of the required packages.
+    ├── document_similarity    <- Functionf for Document Similarity implementation
+    ├── figure                 <- Folder containing figures    
+    ├── training   
+    │   └── config.cdf         <- The config file used for training
+    └── main.py                <- Main file for running XML preprocessing of legal documents
+    └── preprocessing.py
+    └── xml_class.py
+    └── __init__.py
+    
 ```
 
 ## LegalDoc Class
