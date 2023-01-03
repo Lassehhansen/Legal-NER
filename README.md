@@ -1,5 +1,6 @@
 
-## The Tag, the Whole Tag, and Nothing but the Tag”: Fine-tuning and utilizing a pre-trained BERT model for (Fine-Grained) Name Entity Recognition in Danish legal documents
+## The Tag, the Whole Tag, and Nothing but the Tag: Training and utilizing a Named-Entity Recognition model for Danish legal documents
+
 
 
 This project contains the code used to create documents of a custom Named Entity Recognition (NER) model for Danish legal documents. It consists of two fine-tuned BERT models that classify relevant tokens into eight labels. These models were trained on a dataset of manually annotated legal documents from Karnov Group. The best-performing model achieved an accuracy of 84% (F-score).
