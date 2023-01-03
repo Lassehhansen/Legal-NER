@@ -67,11 +67,9 @@ The organization of the project is as follows:
     ├── figure                 <- Folder containing figures    
     ├── training   
     │   └── config.cdf         <- The config file used for training
-    ├── main.py                <- Main file for running XML preprocessing of legal documents
-    ├── preprocessing.py
-    ├── xml_class.py
-    └── __init__.py
-    
+    └── preprocessing          <- Folder containing preprocessing scripts
+        └── main.py            <- Main file for running XML preprocessing of legal documents
+        └── xml_class.py       <- Class for processing XML files 
 ```
 
 ## LegalDoc Class
