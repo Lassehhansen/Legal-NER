@@ -10,7 +10,10 @@
 
 <img src="/ner/figure/xlmRobertLarge_results.png" width=60% height=60%>
 
-  
+## nb-bert fine-tuned for NER legal text 
+
+<img src="/ner/figure/nb-bert_results.png" width=60% height=60%>
+
 # Performance per epoch
 
 ## xlm-roBERTa-large fine-tuned for NER legal text 
