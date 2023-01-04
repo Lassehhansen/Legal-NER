@@ -3,7 +3,7 @@
 
 
 
-This project contains the code used to create documents of a custom Named Entity Recognition (NER) model for Danish legal documents. It consists of two fine-tuned BERT models that classify relevant tokens into eight labels. These models were trained on a dataset of manually annotated legal documents from Karnov Group. The best-performing model achieved an accuracy of 84% (F-score).
+This project contains the code used to preprocess documents of a custom Named Entity Recognition (NER) model for Danish legal documents. The project consists of two fine-tuned BERT models that classify relevant tokens into eight labels. These models were trained on a dataset of manually annotated legal documents from Karnov Group. The best-performing model achieved an accuracy of 84% (F-score).
 
 In addition to training the model, we also examined how it could be used by legal professionals. We conducted a network analysis to assess document similarity and proposed implementations to increase document readability and optimize search algorithms. Our results suggest that this NER model has the potential to be a valuable tool for legal professionals when reviewing large amounts of legal documents.
 
