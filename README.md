@@ -1,11 +1,11 @@
 
 ## The Tag, the Whole Tag, and Nothing but the Tag: Training and utilizing a Named-Entity Recognition model for Danish legal documents
 
-
-
 This project contains the code used to preprocess documents of a custom Named Entity Recognition (NER) model for Danish legal documents. The project consists of two fine-tuned BERT models that classify relevant tokens into eight labels. These models were trained on a dataset of manually annotated legal documents from Karnov Group. The best-performing model achieved an accuracy of 84% (F-score).
 
 In addition to training the model, we also examined how it could be used by legal professionals. We conducted a network analysis to assess document similarity and proposed implementations to increase document readability and optimize search algorithms. Our results suggest that this NER model has the potential to be a valuable tool for legal professionals when reviewing large amounts of legal documents.
+
+Unfortunately the training data and final models cannot be made avaliable before further arrangements are made with Karnov Group due to an NDA.
 
 # Performance
 
@@ -77,32 +77,17 @@ The organization of the project is as follows:
 
 This is a class called LegalDoc that contains several methods for processing legal documents. The xml_loader method reads xml files from a specified path, extracts certain data from them, and stores the data in dataframes. The preperation_for_labelling method takes a dataframe and a column name as input, tokenizes the sentences in the specified column, and returns a new dataframe with the sentence-tokenized texts.
 
-## xml_loader:
+## __init__ 
 
-Input: a path to a folder containing xml files, a language string, and optional boolean values for adding padding and unknown tokens.
-Output: a dataframe containing the extracted data.
+The constructor for the LegalDoc class. It takes three arguments: path, language, add_padding, and add_unknown. path is the file path for a directory containing xml files, language is the language of the documents, and add_padding and add_unknown are optional boolean arguments with default values of False. The constructor initializes the class variables path, language, add_padding, and add_unknown with the provided values.
 
-## preperation_for_labelling:
+## xml_loader
 
-Input: a dataframe and a column name.
-Output: a new dataframe with the sentence-tokenized texts.
+A method that loads xml files from a specified directory, extracts the titles, summaries, and rulings from the files, and creates dataframes for each. It also removes specific ruling specifications from the rulings dataframe and concatenates the dataframes into a single dataframe. The method returns the resulting dataframe.
 
-## parse_args()
+## preperation_for_labelling 
 
-The parse_args() function is used to parse command-line arguments passed to the script when it is executed. It does this using the argparse module, which is a standard Python library for parsing command-line arguments.
-
-The function creates an argument parser object using the argparse.ArgumentParser() constructor, and specifies a description for the script. The add_argument() method is then used to add arguments to the parser. In this case, the script has three arguments:
-
-path, a required string argument specifying the path to the folder containing the xml files.
-language, a required string argument specifying the language of the documents.
-padding, an optional boolean argument that adds padding to the data if specified.
-unknown, an optional boolean argument that adds unknown tokens to the data if specified.
-The parse_args() function returns the parsed arguments using the parse_args() method of the argument parser object.
-
-## create_processor(args)
-The create_processor() function is used to create an instance of the LegalDoc class. It takes a single argument, args, which is a namespace object containing the parsed command-line arguments.
-
-The function creates an instance of the LegalDoc class using the LegalDoc() constructor, and passes in the values of the path, language, padding, and unknown arguments as keyword arguments. The function then returns the created instance of the LegalDoc class.
+A method that takes a dataframe and a column name as arguments, tokenizes the sentences in the specified column, and returns a new dataframe with the sentence-tokenized texts. The method also writes the resulting dataframe to a CSV file.
 
 # Document_similarity_function.py
 
