@@ -73,23 +73,22 @@ The organization of the project is as follows:
         └── xml_class.py       <- Class for processing XML files 
 ```
 
-## LegalDoc Class
+# LegalDoc Class
 
 This is a class called LegalDoc that contains several methods for processing legal documents. The xml_loader method reads xml files from a specified path, extracts certain data from them, and stores the data in dataframes. The preperation_for_labelling method takes a dataframe and a column name as input, tokenizes the sentences in the specified column, and returns a new dataframe with the sentence-tokenized texts.
 
-Here is a brief overview of the methods and their inputs and outputs:
-
-- xml_loader:
+## xml_loader:
 
 Input: a path to a folder containing xml files, a language string, and optional boolean values for adding padding and unknown tokens.
 Output: a dataframe containing the extracted data.
 
-- preperation_for_labelling:
+## preperation_for_labelling:
 
 Input: a dataframe and a column name.
 Output: a new dataframe with the sentence-tokenized texts.
 
 ## parse_args()
+
 The parse_args() function is used to parse command-line arguments passed to the script when it is executed. It does this using the argparse module, which is a standard Python library for parsing command-line arguments.
 
 The function creates an argument parser object using the argparse.ArgumentParser() constructor, and specifies a description for the script. The add_argument() method is then used to add arguments to the parser. In this case, the script has three arguments:
@@ -105,6 +104,21 @@ The create_processor() function is used to create an instance of the LegalDoc cl
 
 The function creates an instance of the LegalDoc class using the LegalDoc() constructor, and passes in the values of the path, language, padding, and unknown arguments as keyword arguments. The function then returns the created instance of the LegalDoc class.
 
+# Document_similarity_function.py
+
+The functions in this python file are used to extract named entity tags from a list of documents, create a network graph based on the similarity of the documents, and find the top 5 most similar documents for each document. The named entity tags are extracted using a specified natural language processing model, and the document similarity is calculated using cosine similarity and a TfidfVectorizer. The resulting data and graphs can be used for further analysis and visualization.
+
+## extract_tags_todf
+
+A function that takes a list of documents and a model name and returns a dataframe of named entity tags extracted from the documents using the specified model. The dataframe has columns for the entity text, label, and document id.
+
+## create_network 
+
+A function that takes a dataframe of named entity tags and a threshold value and creates a network graph where nodes represent documents and edges connect documents with a cosine similarity above the threshold. The function also writes the graph to a file in GEXF format.
+
+## find_most_similar 
+
+A function that takes a dataframe of named entity tags and returns a list of the top 5 most similar documents for each document, based on cosine similarity. The function first groups the dataframe by document id and converts the list of entity text values for each group into a list of strings. It then uses a TfidfVectorizer to compute the document-term matrix and uses cosine similarity to compute the pairwise similarities between the document vectors. Finally, it iterates over the documents, extracts the row of the similarity matrix corresponding to the current document, zips the row with the indices of the documents, and sorts the list by the similarity values. It then selects the top 5 documents with the highest similarity values.
 
 
 
